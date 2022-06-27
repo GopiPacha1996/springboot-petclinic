@@ -44,7 +44,7 @@ resource "aws_default_security_group" "demo-sg" {
 
 resource "aws_key_pair" "my-key" {
     key_name = "tf-key"
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3k8k8te0lV/rhK51gEzbvoFWOo4TxExKT9bQ/AjLiHLzY6c9uS25GMkXcPXEr/HoT62c0stvYCTvrkETq/iqjY9qrNWDhWI5WrkXzV3Sv1nIHNMcFX6rAUmZuQ+2ID0nzVu6hzLB4aYuaPEnBG9HtQAq76EGMBLmMp3BU7rTdgfG7MAdDDNzBHiXlLYP/hVt9wYqFX/ObK/IpPFf60ktBs54KXFHir8ZSS3LpIp/7B0jAb1CASAdi0e14Flx9F0pw5qeDcoOk7f/33m0W0KpMd1aDPGS/k1jLGpQpEoElVEffzfRJdcqrFYKiEr9aHaf20bmBhYbBEdpsHcjPhULZ0m6R2CbDksR/bvg/kQaecxmicRh8dSebbEH+/CFU0yteBiAmfdct4gj28URS09uOTF4QJswZULDIMGckY+hhofyYqcFMXMmSKNJRl+dz6px10F2QU6+8SIM7aTtr1lvwi/vD5YOi3iAbvaUcJtKhIAjePq1Bmv3v6E9ZKsXkbPE= srpen@SriniPersonal"
+    public_key =  file(/home/ubuntu/.ssh/id_ras.pub)
 }
 
 resource "aws_instance" "demoinstance"{
