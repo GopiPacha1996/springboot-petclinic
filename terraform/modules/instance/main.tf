@@ -44,7 +44,7 @@ resource "aws_default_security_group" "demo-sg" {
 
 resource "aws_key_pair" "my-key" {
     key_name = "tf-key"
-    public_key =  file("/home/ubuntu/.ssh/id_ras.pub")
+    public_key =  file("/home/ubuntu/.ssh/id_rsa.pub")
 }
 
 resource "aws_instance" "demoinstance"{
