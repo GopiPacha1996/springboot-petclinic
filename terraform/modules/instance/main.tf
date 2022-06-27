@@ -59,7 +59,7 @@ resource "aws_instance" "demoinstance"{
         Name = "${var.env}-ec2"
     }
      provisioner "local-exec" {
-      command = "echo ${self.public_ip} > hosts"
+      command = "echo ${self.public_ip} > ../anisble/hosts"
   }
 }
 
