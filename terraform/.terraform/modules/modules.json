@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"ec2","Source":"./modules/instance","Dir":"modules/instance"},{"Key":"networking","Source":"./modules/network","Dir":"modules/network"},{"Key":"","Source":"","Dir":"."}]}

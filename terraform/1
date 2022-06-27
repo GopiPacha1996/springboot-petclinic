@@ -1,0 +1,11 @@
+provider "aws" {
+region = "us-east-2"
+}
+
+resource "aws_vpc" "demo-vpc" {
+cidr_block = "20.0.0.0/24"
+enable_dns_support = true
+tags = {
+  Name= "Terraform-vpc"
+}
+}
