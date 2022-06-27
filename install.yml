@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  pre_tasks:
+     - name: updating cache
+  tasks:
+    - name: intalling nginx and docker
+      apt: name="{{ item }}" state=latest
+      loop:
+         - nginx
+         - docker.io
+         
