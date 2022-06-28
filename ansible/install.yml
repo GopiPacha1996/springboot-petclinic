@@ -2,6 +2,8 @@
   become: true
   pre_tasks:
      - name: updating cache
+       apt:
+         update_cache: true
   tasks:
     - name: intalling nginx and docker
       apt: name="{{ item }}" state=latest
