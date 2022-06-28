@@ -43,7 +43,7 @@ resource "aws_default_security_group" "demo-sg" {
 }
 
 resource "aws_key_pair" "my-key" {
-    key_name = "tf-key"
+    key_name = "tf-key-new"
     public_key =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwZ9gsA5ue82Pe1Ma02SKICyeZWE4qOMcM/zUrHMZC1iCcSvIShkTapT8VgiTObCP4blnGydLro/xpkCmLn0G5ZHs+nCjupEZb0wtNP/FFLzPyvHUZn5j8tc+QVsTZiEJd8SYPOjupYeXRzrzz4Z3zDe8l1lBD+wiwvP1GwMYFJUw3WpKb4Z5uA9uO05Dtc1pEUzOR5C2h6fuoa9nPj9KV/I5lnxFvJb0eC++qfE9X+BocbV/3tQzYtbrYimI7ZWCAEIHzfI42Q1sU7A9mVG7RBPeRqog/lqJdcfBI+vkWuL3hiSgoaVhImivbNYaaUU3Z262TSWX9aQZ9Qp1opxDfloyVp27yFwSTufiilv40IyNM+B8dqsRL8ITiRaaUgdc10CP8/jdpX95EgNuhvaZ4A5CTKZ+FoWhQ1CxgHWGoEa4t1yLo1BOGLElglLDfyQctjoIvUm2RHzv58WSNr718saf2+rCcJbVUl7KIAglbFd70Oq+5bA/yiywg9U2BdvE= ubuntu@ip-172-31-89-87"
 }
 
