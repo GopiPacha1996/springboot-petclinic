@@ -6,7 +6,7 @@ pipeline{
         
         stage('Build'){
             steps {
-                echo ('Hey I am building here')
+                echo ('docker build -t pet:v2 .')
             }
         }
         stage('Test'){
