@@ -6,7 +6,8 @@ pipeline{
         
         stage('Build'){
             steps {
-                echo ('docker build -t pet:v2 .')
+                
+                sh 'docker build -t demo:v2 ."
             }
         }
         stage('Test'){
